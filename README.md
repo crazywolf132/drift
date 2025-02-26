@@ -150,6 +150,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Brayden Moon - brayden@drift.app
+Brayden Moon
 
-[@BraydenMoon](https://twitter.com/braydenm) on Twitter 
+[@0x1f99d](https://x.com/0x1f99d) on X 
