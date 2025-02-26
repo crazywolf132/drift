@@ -1,16 +1,20 @@
 # Drift
 
-Drift is a native iOS application designed to [brief description of what the app does].
+Drift is a native macOS menu bar application designed to enhance productivity through customizable keyboard shortcuts and quick actions. It provides a leader key-based system for executing various actions with simple key sequences.
 
 ## Features
 
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
+- **Leader Key System**: Use a customizable leader key (with modifiers) to activate leader mode, then type sequences to trigger actions
+- **Quick Application Switching**: Rapidly switch between applications with custom key bindings
+- **Status Bar Integration**: Unobtrusive menu bar icon with visual feedback when in leader mode
+- **Customizable Configuration**: Define your own key sequences for various actions
+- **Accessibility Features**: Seamless integration with macOS accessibility framework
+- **Privacy-Focused**: Secure logging with privacy protection for sensitive information
+- **Lightweight & Efficient**: Low system resource usage, designed for minimal overhead
 
 ## Requirements
 
-- iOS 15.0+
+- macOS 12.0+
 - Xcode 14.0+
 - Swift 5.7+
 
@@ -32,9 +36,9 @@ open Drift.xcodeproj
 ## Project Structure
 
 - `Drift/` - Main application source code
-- `Drift/Views/` - SwiftUI views
-- `Drift/Models/` - Data models
-- `Drift/ViewModels/` - View models for MVVM architecture
+- `Drift/Managers/` - Core functionality managers
+- `Drift/Models/` - Data models for configuration
+- `Drift/Utils/` - Utility functions and helpers
 
 ## Contributing
 
@@ -42,13 +46,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the [LICENSE_TYPE] License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgements
 
-- [Acknowledgement 1]
-- [Acknowledgement 2]
+- [HotKey](https://github.com/soffes/HotKey) - Swift library for system-wide keyboard shortcuts
 
 ## Contact
 
-[Your Name] - [your.email@example.com] 
+Brayden Moon - [your.email@example.com] 
