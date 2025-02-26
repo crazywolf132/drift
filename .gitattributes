@@ -1,0 +1,26 @@
+# Swift
+*.swift linguist-language=Swift
+
+# Objective-C
+*.h linguist-language=Objective-C
+*.m linguist-language=Objective-C
+
+# Xcode
+*.pbxproj merge=union
+*.xcworkspacedata merge=union
+*.xcscheme merge=union
+
+# Set the default behavior for all files
+* text=auto
+
+# Make sure shell scripts use LF
+*.sh text eol=lf
+
+# Denote all files that are truly binary and should not be modified
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.tiff binary
+*.ico binary
+*.pdf binary 
