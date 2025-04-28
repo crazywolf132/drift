@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		543038FB2D66F8FF00C322C0 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 543038FA2D66F8FF00C322C0 /* HotKey */; };
+		54D5B3DA2DBF928700AF77F9 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 54D5B3D92DBF928700AF77F9 /* LaunchAtLogin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D5B3DA2DBF928700AF77F9 /* LaunchAtLogin in Frameworks */,
 				543038FB2D66F8FF00C322C0 /* HotKey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +86,7 @@
 			name = Drift;
 			packageProductDependencies = (
 				543038FA2D66F8FF00C322C0 /* HotKey */,
+				54D5B3D92DBF928700AF77F9 /* LaunchAtLogin */,
 			);
 			productName = Drift;
 			productReference = 543038E72D66F77500C322C0 /* Drift.app */;
@@ -115,6 +118,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				543038F92D66F8FF00C322C0 /* XCRemoteSwiftPackageReference "HotKey" */,
+				54D5B3D82DBF928700AF77F9 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 543038E82D66F77500C322C0 /* Products */;
@@ -355,6 +359,14 @@
 				kind = branch;
 			};
 		};
+		54D5B3D82DBF928700AF77F9 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -362,6 +374,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 543038F92D66F8FF00C322C0 /* XCRemoteSwiftPackageReference "HotKey" */;
 			productName = HotKey;
+		};
+		54D5B3D92DBF928700AF77F9 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54D5B3D82DBF928700AF77F9 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

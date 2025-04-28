@@ -38,28 +38,28 @@ public struct StatusEmojis: Codable {
     }
 }
 
+public struct LeaderKey: Codable {
+    public var key: String
+    public var modifiers: KeyModifiers
+    
+    public init(key: String = "space", modifiers: KeyModifiers = KeyModifiers(option: true)) {
+        self.key = key
+        self.modifiers = modifiers
+    }
+}
+
 public struct GlobalSettings: Codable {
     public var quickSwitchEnabled: Bool
-    
-    /// The key used to activate leader mode (single character like "space", "a", etc.)
-    public var leaderKey: String
-    
-    /// Modifier keys to use with the leader key
-    public var leaderModifiers: KeyModifiers
-    
-    /// Emoji icons used in the status bar (used when useSystemIcons is false)
+    public var leaderKey: LeaderKey
     public var statusEmojis: StatusEmojis
-    
-    /// Whether to use system SF Symbols (true) or emojis (false) for status icons
     public var useSystemIcons: Bool
     
-    public init(quickSwitchEnabled: Bool, leaderKey: String = "space", 
-                leaderModifiers: KeyModifiers = KeyModifiers(option: true, control: true), 
+    public init(quickSwitchEnabled: Bool,
+                leaderKey: LeaderKey = LeaderKey(),
                 statusEmojis: StatusEmojis = StatusEmojis(),
                 useSystemIcons: Bool = true) {
         self.quickSwitchEnabled = quickSwitchEnabled
         self.leaderKey = leaderKey
-        self.leaderModifiers = leaderModifiers
         self.statusEmojis = statusEmojis
         self.useSystemIcons = useSystemIcons
     }

@@ -91,8 +91,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private func setupHotKey() {
         // Get leader key from config
         let config = configManager.config
-        let keyString = config.settings.leaderKey.lowercased()
-        let modifiers = config.settings.leaderModifiers
+        let keyString = config.settings.leaderKey.key.lowercased()
+        let modifiers = config.settings.leaderKey.modifiers
         
         // Convert key string to Key enum value using special handling for multi-character keys
         var keyValue: Key?
